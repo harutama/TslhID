@@ -6,7 +6,7 @@
     <RootNamespace>Harutama.TslhID</RootNamespace>
     <Authors>Harutama</Authors>
     <PackageId>Harutama.TslhID</PackageId>
-    <Version>0.1.1</Version>
+    <Version>0.1.4</Version>
     <Product>Time-Short-LongHash ID</Product>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <AssemblyVersion>0.1.0.0</AssemblyVersion>
@@ -26,14 +26,18 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="HashDepot" Version="2.0.3" />
-    <PackageReference Include="Microsoft.Extensions.Configuration.Json" Version="3.1.0" />
+    <None Remove="Harutama.TslhID.Config.json" />
   </ItemGroup>
 
   <ItemGroup>
-    <None Update="AppConfig.json">
+    <Content Include="Harutama.TslhID.Config.json">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
+    </Content>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="HashDepot" Version="2.0.3" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.Json" Version="3.1.0" />
   </ItemGroup>
 
 </Project>

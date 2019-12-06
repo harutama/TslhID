@@ -67,7 +67,7 @@ namespace Harutama.TimeShortLongHashID
         {
             var configBuilder = new ConfigurationBuilder();
             configBuilder.SetBasePath(Directory.GetCurrentDirectory());
-            configBuilder.AddJsonFile(@"AppConfig.json");
+            configBuilder.AddJsonFile(@"Harutama.TslhID.Config.json");
 
             var config = configBuilder.Build();
 
