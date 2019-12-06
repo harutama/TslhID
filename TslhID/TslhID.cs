@@ -5,6 +5,7 @@ using System.Collections.Generic;
 using System.Data.SqlTypes;
 using System.IO;
 using System.Linq;
+using System.Reflection;
 using System.Text;
 
 namespace Harutama.TimeShortLongHashID
@@ -66,7 +67,7 @@ namespace Harutama.TimeShortLongHashID
         static TslhID()
         {
             var configBuilder = new ConfigurationBuilder();
-            configBuilder.SetBasePath(Directory.GetCurrentDirectory());
+            configBuilder.SetBasePath(Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location));
             configBuilder.AddJsonFile(@"Harutama.TslhID.Config.json");
 
             var config = configBuilder.Build();
