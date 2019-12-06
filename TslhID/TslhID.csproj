@@ -6,7 +6,7 @@
     <RootNamespace>Harutama.TslhID</RootNamespace>
     <Authors>Harutama</Authors>
     <PackageId>Harutama.TslhID</PackageId>
-    <Version>0.1.4</Version>
+    <Version>0.1.5</Version>
     <Product>Time-Short-LongHash ID</Product>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <AssemblyVersion>0.1.0.0</AssemblyVersion>
